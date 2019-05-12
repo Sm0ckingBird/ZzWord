@@ -20,6 +20,7 @@
         android:label="ZzWord"
         android:roundIcon="@mipmap/me"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true" >
         <activity android:name="com.example.zzwordapp.AttWordInfo" />
@@ -28,6 +29,7 @@
         <activity android:name="com.example.zzwordapp.AttentionWord" />
         <activity android:name="com.example.zzwordapp.GREWord" />
         <activity android:name="com.example.zzwordapp.ChangePlan" />
+        <activity android:name="com.example.zzwordapp.WordListActivity" />
         <activity
             android:name="com.example.zzwordapp.RememberWord"
             android:label=""
@@ -42,6 +44,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <provider
+            android:name="com.android.tools.ir.server.InstantRunContentProvider"
+            android:authorities="com.example.zzwordapp.com.android.tools.ir.server.InstantRunContentProvider"
+            android:multiprocess="true" />
     </application>
 
 </manifest>

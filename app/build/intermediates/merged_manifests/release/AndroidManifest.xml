@@ -26,6 +26,12 @@
         <activity android:name="com.example.zzwordapp.translateAct" />
         <activity android:name="com.example.zzwordapp.AttentionWord" />
         <activity android:name="com.example.zzwordapp.GREWord" />
+        <activity android:name="com.example.zzwordapp.ChangePlan" />
+        <activity android:name="com.example.zzwordapp.WordListActivity" />
+        <activity
+            android:name="com.example.zzwordapp.RememberWord"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="com.example.zzwordapp.MainActivity"
             android:label="ZzWord"
