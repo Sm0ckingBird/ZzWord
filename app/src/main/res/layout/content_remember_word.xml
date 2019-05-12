@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".RememberWord"
+    tools:showIn="@layout/activity_remember_word">
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/remember_word_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:elevation="15dp"
+        app:fabSize="mini"
+        android:src="@drawable/ic_bookmark_border_white_48dp" />
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="30sp"
+        android:elevation="5dp"
+        app:cardCornerRadius="7dp"
+        android:id="@+id/remember_word_card_view_1">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/remember_word_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="cedh"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center"
+                    android:textSize="35dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/remember_word_pronunciation"
+                    android:text="dhasohi"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/remember_word_meaning"
+                    android:layout_width="match_parent"
+                    android:layout_height="215dp"
+                    android:layout_margin="20dp"
+                    android:gravity="center_horizontal"
+                    android:text="aaaaaaaaaaaaaaaaaaaaaa
+                    aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                    aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/hint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="hint" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginHorizontal="5dp">
+                <Button
+                    android:id="@+id/remember_word_unknow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:textColorLink="@color/colorAccent"
+                    android:textColor="@color/white"
+                    android:text="不认识"
+
+                    android:layout_weight="1"/>
+                <Button
+                    android:id="@+id/remember_word_unsure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="模糊"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
+                    android:textColor="@color/colorPrimaryDark"
+
+                    android:layout_weight="1"/>
+                <Button
+                    android:id="@+id/remember_word_know"
+                    style="@style/Widget.AppCompat.Button.Colored"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="认识"
+
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+</android.support.design.widget.CoordinatorLayout>

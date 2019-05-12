@@ -1,0 +1,218 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/zhangzijian/22j/ZzWordApp/app/src/main/AndroidManifest.xml:2:1-40:12
+INJECTED from /Users/zhangzijian/22j/ZzWordApp/app/src/main/AndroidManifest.xml:2:1-40:12
+INJECTED from /Users/zhangzijian/22j/ZzWordApp/app/src/main/AndroidManifest.xml:2:1-40:12
+INJECTED from /Users/zhangzijian/22j/ZzWordApp/app/src/main/AndroidManifest.xml:2:1-40:12
+MERGED from [com.android.support:design:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/4f4aeea34da984dde781658410ad192f/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/02127f64108bc51ae187c6566590d1fa/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/6d3815a9de5f7fbd4d8ea367b23d4a6d/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/347faa5441eea9e5ec8351989317d658/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/467fcfbb79ce1ef7d51b681a82107d2d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/2fd32342ef3701eade89f495aebd5ef5/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/0407326a9b510e6b87cc895412f790d9/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/8ec0dce5b9ac7aa845e05875b82697ef/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/64e89158ed2940a413cfb54272288432/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/8e282ab21a96f2bda9007019a4e7ec5c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/2dd06f611282060f604202b82df3fa6d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/31ea43b1a5787df438e851d7fe1de8a2/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/bc4416df88c98c40eb950e4218cdce31/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/35398930495b1812c2d9d0f8fa366564/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/289ac55cc6c4a7354141021d33ab00ae/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/a76c49430152dbfbc6fd829909dccbb6/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/79e9f4abd3953ab8e395a1ab11493315/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/c12b1442dce566e502f26da7ff13c4df/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/ee684f8d4f194b9e5ce7bf8063eb371f/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/9f1a9a220d122b7079c0cadbb67920b2/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/a8164a60e6ac1bbc463ceb19ea254fbc/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/e1bb450b266f15b9f37428d97d543f8a/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/98339bb3467be5b00884463b620478f2/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/8fcec5ed653df9ae6ee674c5cb4a8bb1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/e3199ef0e2d595a50d2889b530e917d3/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/a119b86d5ed1e3af460b676fc4faa810/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/f3c583f0a050a523ac959b94c16401e7/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/b552ffd2e52f7600684824ccf748949d/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/11caba83fcb41937291f6dd289528cdb/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/98f93f7323adc2a72ba7f4036184ebe3/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/922cda0d5ad20dabd595d61d974c7462/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/zhangzijian/22j/ZzWordApp/app/src/main/AndroidManifest.xml:2:1-40:12
+INJECTED from /Users/zhangzijian/22j/ZzWordApp/app/src/main/AndroidManifest.xml:2:1-40:12
+INJECTED from /Users/zhangzijian/22j/ZzWordApp/app/src/main/AndroidManifest.xml:2:1-40:12
+	package
+		ADDED from /Users/zhangzijian/22j/ZzWordApp/app/src/main/AndroidManifest.xml:3:5-36
+		INJECTED from /Users/zhangzijian/22j/ZzWordApp/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/zhangzijian/22j/ZzWordApp/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/zhangzijian/22j/ZzWordApp/app/src/main/AndroidManifest.xml
+		ADDED from /Users/zhangzijian/22j/ZzWordApp/app/src/main/AndroidManifest.xml:2:1-40:12
+		INJECTED from /Users/zhangzijian/22j/ZzWordApp/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/zhangzijian/22j/ZzWordApp/app/src/main/AndroidManifest.xml
+		ADDED from /Users/zhangzijian/22j/ZzWordApp/app/src/main/AndroidManifest.xml:2:1-40:12
+		INJECTED from /Users/zhangzijian/22j/ZzWordApp/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/zhangzijian/22j/ZzWordApp/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/zhangzijian/22j/ZzWordApp/app/src/main/AndroidManifest.xml:5:5-81
+	android:name
+		ADDED from /Users/zhangzijian/22j/ZzWordApp/app/src/main/AndroidManifest.xml:5:22-78
+uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+ADDED from /Users/zhangzijian/22j/ZzWordApp/app/src/main/AndroidManifest.xml:6:5-84
+	android:name
+		ADDED from /Users/zhangzijian/22j/ZzWordApp/app/src/main/AndroidManifest.xml:6:22-81
+uses-permission#android.permission.INTERNET
+ADDED from /Users/zhangzijian/22j/ZzWordApp/app/src/main/AndroidManifest.xml:7:5-67
+	android:name
+		ADDED from /Users/zhangzijian/22j/ZzWordApp/app/src/main/AndroidManifest.xml:7:22-64
+application
+ADDED from /Users/zhangzijian/22j/ZzWordApp/app/src/main/AndroidManifest.xml:9:5-38:19
+MERGED from [com.android.support:design:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/4f4aeea34da984dde781658410ad192f/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/4f4aeea34da984dde781658410ad192f/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/6d3815a9de5f7fbd4d8ea367b23d4a6d/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/6d3815a9de5f7fbd4d8ea367b23d4a6d/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-compat:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/ee684f8d4f194b9e5ce7bf8063eb371f/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/ee684f8d4f194b9e5ce7bf8063eb371f/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/9f1a9a220d122b7079c0cadbb67920b2/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/9f1a9a220d122b7079c0cadbb67920b2/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/ee684f8d4f194b9e5ce7bf8063eb371f/AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from /Users/zhangzijian/22j/ZzWordApp/app/src/main/AndroidManifest.xml:14:9-35
+	android:label
+		ADDED from /Users/zhangzijian/22j/ZzWordApp/app/src/main/AndroidManifest.xml:12:9-31
+	android:roundIcon
+		ADDED from /Users/zhangzijian/22j/ZzWordApp/app/src/main/AndroidManifest.xml:13:9-39
+	android:icon
+		ADDED from /Users/zhangzijian/22j/ZzWordApp/app/src/main/AndroidManifest.xml:11:9-34
+	android:allowBackup
+		ADDED from /Users/zhangzijian/22j/ZzWordApp/app/src/main/AndroidManifest.xml:10:9-35
+	android:theme
+		ADDED from /Users/zhangzijian/22j/ZzWordApp/app/src/main/AndroidManifest.xml:15:9-40
+	android:usesCleartextTraffic
+		ADDED from /Users/zhangzijian/22j/ZzWordApp/app/src/main/AndroidManifest.xml:16:9-44
+activity#com.example.zzwordapp.AttWordInfo
+ADDED from /Users/zhangzijian/22j/ZzWordApp/app/src/main/AndroidManifest.xml:17:9-49
+	android:name
+		ADDED from /Users/zhangzijian/22j/ZzWordApp/app/src/main/AndroidManifest.xml:17:19-46
+activity#com.example.zzwordapp.NotAttWordInfo
+ADDED from /Users/zhangzijian/22j/ZzWordApp/app/src/main/AndroidManifest.xml:18:9-52
+	android:name
+		ADDED from /Users/zhangzijian/22j/ZzWordApp/app/src/main/AndroidManifest.xml:18:19-49
+activity#com.example.zzwordapp.translateAct
+ADDED from /Users/zhangzijian/22j/ZzWordApp/app/src/main/AndroidManifest.xml:19:9-50
+	android:name
+		ADDED from /Users/zhangzijian/22j/ZzWordApp/app/src/main/AndroidManifest.xml:19:19-47
+activity#com.example.zzwordapp.AttentionWord
+ADDED from /Users/zhangzijian/22j/ZzWordApp/app/src/main/AndroidManifest.xml:20:9-51
+	android:name
+		ADDED from /Users/zhangzijian/22j/ZzWordApp/app/src/main/AndroidManifest.xml:20:19-48
+activity#com.example.zzwordapp.GREWord
+ADDED from /Users/zhangzijian/22j/ZzWordApp/app/src/main/AndroidManifest.xml:21:9-45
+	android:name
+		ADDED from /Users/zhangzijian/22j/ZzWordApp/app/src/main/AndroidManifest.xml:21:19-42
+activity#com.example.zzwordapp.ChangePlan
+ADDED from /Users/zhangzijian/22j/ZzWordApp/app/src/main/AndroidManifest.xml:22:9-48
+	android:name
+		ADDED from /Users/zhangzijian/22j/ZzWordApp/app/src/main/AndroidManifest.xml:22:19-45
+activity#com.example.zzwordapp.RememberWord
+ADDED from /Users/zhangzijian/22j/ZzWordApp/app/src/main/AndroidManifest.xml:23:9-27:25
+	android:label
+		ADDED from /Users/zhangzijian/22j/ZzWordApp/app/src/main/AndroidManifest.xml:25:13-29
+	android:theme
+		ADDED from /Users/zhangzijian/22j/ZzWordApp/app/src/main/AndroidManifest.xml:26:13-56
+	android:name
+		ADDED from /Users/zhangzijian/22j/ZzWordApp/app/src/main/AndroidManifest.xml:24:13-41
+activity#com.example.zzwordapp.MainActivity
+ADDED from /Users/zhangzijian/22j/ZzWordApp/app/src/main/AndroidManifest.xml:28:9-37:20
+	android:label
+		ADDED from /Users/zhangzijian/22j/ZzWordApp/app/src/main/AndroidManifest.xml:30:13-35
+	android:theme
+		ADDED from /Users/zhangzijian/22j/ZzWordApp/app/src/main/AndroidManifest.xml:31:13-56
+	android:name
+		ADDED from /Users/zhangzijian/22j/ZzWordApp/app/src/main/AndroidManifest.xml:29:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/zhangzijian/22j/ZzWordApp/app/src/main/AndroidManifest.xml:32:13-36:29
+action#android.intent.action.MAIN
+ADDED from /Users/zhangzijian/22j/ZzWordApp/app/src/main/AndroidManifest.xml:33:17-69
+	android:name
+		ADDED from /Users/zhangzijian/22j/ZzWordApp/app/src/main/AndroidManifest.xml:33:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/zhangzijian/22j/ZzWordApp/app/src/main/AndroidManifest.xml:35:17-77
+	android:name
+		ADDED from /Users/zhangzijian/22j/ZzWordApp/app/src/main/AndroidManifest.xml:35:27-74
+uses-sdk
+INJECTED from /Users/zhangzijian/22j/ZzWordApp/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/zhangzijian/22j/ZzWordApp/app/src/main/AndroidManifest.xml
+INJECTED from /Users/zhangzijian/22j/ZzWordApp/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:design:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/4f4aeea34da984dde781658410ad192f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/4f4aeea34da984dde781658410ad192f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/02127f64108bc51ae187c6566590d1fa/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/02127f64108bc51ae187c6566590d1fa/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/6d3815a9de5f7fbd4d8ea367b23d4a6d/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/6d3815a9de5f7fbd4d8ea367b23d4a6d/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/347faa5441eea9e5ec8351989317d658/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/347faa5441eea9e5ec8351989317d658/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/467fcfbb79ce1ef7d51b681a82107d2d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/467fcfbb79ce1ef7d51b681a82107d2d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/2fd32342ef3701eade89f495aebd5ef5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/2fd32342ef3701eade89f495aebd5ef5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/0407326a9b510e6b87cc895412f790d9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/0407326a9b510e6b87cc895412f790d9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/8ec0dce5b9ac7aa845e05875b82697ef/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/8ec0dce5b9ac7aa845e05875b82697ef/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/64e89158ed2940a413cfb54272288432/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/64e89158ed2940a413cfb54272288432/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/8e282ab21a96f2bda9007019a4e7ec5c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/8e282ab21a96f2bda9007019a4e7ec5c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/2dd06f611282060f604202b82df3fa6d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/2dd06f611282060f604202b82df3fa6d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/31ea43b1a5787df438e851d7fe1de8a2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/31ea43b1a5787df438e851d7fe1de8a2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/bc4416df88c98c40eb950e4218cdce31/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/bc4416df88c98c40eb950e4218cdce31/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/35398930495b1812c2d9d0f8fa366564/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/35398930495b1812c2d9d0f8fa366564/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/289ac55cc6c4a7354141021d33ab00ae/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/289ac55cc6c4a7354141021d33ab00ae/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/a76c49430152dbfbc6fd829909dccbb6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/a76c49430152dbfbc6fd829909dccbb6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/79e9f4abd3953ab8e395a1ab11493315/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/79e9f4abd3953ab8e395a1ab11493315/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/c12b1442dce566e502f26da7ff13c4df/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/c12b1442dce566e502f26da7ff13c4df/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/ee684f8d4f194b9e5ce7bf8063eb371f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/ee684f8d4f194b9e5ce7bf8063eb371f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/9f1a9a220d122b7079c0cadbb67920b2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/9f1a9a220d122b7079c0cadbb67920b2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/a8164a60e6ac1bbc463ceb19ea254fbc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/a8164a60e6ac1bbc463ceb19ea254fbc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/e1bb450b266f15b9f37428d97d543f8a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/e1bb450b266f15b9f37428d97d543f8a/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/98339bb3467be5b00884463b620478f2/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/98339bb3467be5b00884463b620478f2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/8fcec5ed653df9ae6ee674c5cb4a8bb1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/8fcec5ed653df9ae6ee674c5cb4a8bb1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/e3199ef0e2d595a50d2889b530e917d3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/e3199ef0e2d595a50d2889b530e917d3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/a119b86d5ed1e3af460b676fc4faa810/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/a119b86d5ed1e3af460b676fc4faa810/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/f3c583f0a050a523ac959b94c16401e7/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/f3c583f0a050a523ac959b94c16401e7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/b552ffd2e52f7600684824ccf748949d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/b552ffd2e52f7600684824ccf748949d/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/11caba83fcb41937291f6dd289528cdb/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/11caba83fcb41937291f6dd289528cdb/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/98f93f7323adc2a72ba7f4036184ebe3/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/98f93f7323adc2a72ba7f4036184ebe3/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/922cda0d5ad20dabd595d61d974c7462/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/zhangzijian/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/922cda0d5ad20dabd595d61d974c7462/AndroidManifest.xml:20:5-44
+INJECTED from /Users/zhangzijian/22j/ZzWordApp/app/src/main/AndroidManifest.xml
+INJECTED from /Users/zhangzijian/22j/ZzWordApp/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/zhangzijian/22j/ZzWordApp/app/src/main/AndroidManifest.xml
+		ADDED from /Users/zhangzijian/22j/ZzWordApp/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/zhangzijian/22j/ZzWordApp/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/zhangzijian/22j/ZzWordApp/app/src/main/AndroidManifest.xml
+		ADDED from /Users/zhangzijian/22j/ZzWordApp/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/zhangzijian/22j/ZzWordApp/app/src/main/AndroidManifest.xml

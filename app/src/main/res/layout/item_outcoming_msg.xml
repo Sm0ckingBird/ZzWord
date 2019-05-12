@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="right"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/id_to_msg_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#bebebe"
+        android:text="2012-12-12 12:12:12"
+        android:textColor="#f5f5f5"
+        android:textSize="12sp" />
+
+    <RelativeLayout
+        android:id="@+id/id_send_all"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/id_to_msg_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginRight="7dp"
+            android:layout_toLeftOf="@id/id_me"
+            android:background="@drawable/rectqipao"
+            android:gravity="clip_horizontal|center|clip_vertical"
+            android:maxWidth="250dp"
+            android:text="哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈或或或或或或或或或或"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/id_me"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="6dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="49dp"
+                android:layout_height="49dp"
+                android:src="@mipmap/me" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="翟种"
+                android:textSize="14sp"></TextView>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

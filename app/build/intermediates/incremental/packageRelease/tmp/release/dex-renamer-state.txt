@@ -1,0 +1,4 @@
+#Tue Apr 16 13:37:34 CST 2019
+base.0=H\:\\Android\\AndroidWorkSpace\\ZzWordApp\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\out
+path.0=classes.dex
+renamed.0=classes.dex

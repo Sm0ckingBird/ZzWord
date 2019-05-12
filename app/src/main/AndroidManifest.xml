@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.zzwordapp">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/me"
+        android:label="ZzWord"
+        android:roundIcon="@mipmap/me"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".AttWordInfo" />
+        <activity android:name=".NotAttWordInfo" />
+        <activity android:name=".translateAct" />
+        <activity android:name=".AttentionWord" />
+        <activity android:name=".GREWord" />
+        <activity android:name=".ChangePlan" />
+        <activity android:name=".WordListActivity" />
+        <activity
+            android:name=".RememberWord"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"
+            ></activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="ZzWord"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

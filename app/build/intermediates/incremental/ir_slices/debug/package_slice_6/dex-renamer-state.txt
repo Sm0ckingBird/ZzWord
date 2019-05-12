@@ -1,0 +1,4 @@
+#Sun May 12 22:25:10 CST 2019
+base.0=/Users/zhangzijian/22j/ZzWordApp/app/build/intermediates/transforms/dexMerger/debug/6
+path.0=classes.dex
+renamed.0=classes.dex

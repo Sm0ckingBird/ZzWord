@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:orientation="vertical"
+  android:background="#ffffff">
+  <LinearLayout
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:orientation="horizontal">
+  <TextView  
+   android:text="单词："
+  android:layout_width="wrap_content" 
+  android:layout_height="wrap_content" 
+   android:textSize="22px"
+  />
+  <EditText
+   android:id="@+id/EditWord_spelling"
+  android:layout_width="fill_parent" 
+  android:layout_height="wrap_content" 
+  android:hint="单词拼写"
+  />
+  </LinearLayout>
+  <LinearLayout
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:orientation="horizontal">
+  <TextView  
+   android:text="中文："
+  android:layout_width="wrap_content" 
+  android:layout_height="wrap_content" 
+   android:textSize="22px"
+  />
+  <EditText
+   android:id="@+id/EditWord_meanning"
+  android:layout_width="fill_parent" 
+  android:layout_height="wrap_content" 
+  android:hint="中文解释"
+  android:lines="3"
+  />
+  </LinearLayout>
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="75dp"
+		android:gravity="center_horizontal"
+		android:orientation="horizontal">
+
+		<Button
+			android:id="@+id/attention_confirm_button"
+			android:layout_width="27dp"
+			android:layout_height="60dp"
+			android:background="@drawable/refesh"
+			android:text="确定"
+			android:textColor="#FFFFFF"></Button>
+
+		<Button
+			android:id="@+id/attention_cancel_button"
+			android:layout_width="27dp"
+			android:layout_height="60dp"
+			android:background="@drawable/refesh"
+			android:text="取消"
+			android:textColor="#FFFFFF"></Button>
+	</LinearLayout>
+</LinearLayout>

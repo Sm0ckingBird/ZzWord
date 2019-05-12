@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="@drawable/planbackground"
+        android:gravity="clip_horizontal|center|top"
+        android:text="修改计划"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:layout_above="@id/button3"
+        android:layout_alignRight="@id/button3"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="-35dp"
+        android:background="@drawable/queding"
+        android:text="确认"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:layout_above="@id/button3"
+        android:layout_alignLeft="@id/button3"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="-35dp"
+        android:background="@drawable/queding"
+        android:text="取消"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button3"
+        android:layout_alignLeft="@id/button3"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="20dp"
+        android:text="每日学习新词" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button3"
+        android:layout_alignLeft="@id/button3"
+        android:layout_marginLeft="232dp"
+        android:layout_marginTop="20dp"
+        android:text="全部学完需要天数" />
+
+    <EditText
+        android:id="@+id/pernum"
+        android:layout_width="84dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/textView2"
+        android:layout_alignLeft="@id/textView2"
+        android:layout_marginLeft="-2dp"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:gravity="clip_horizontal|center|clip_vertical"
+        android:inputType="numberSigned" />
+
+    <TextView
+        android:id="@+id/daynum"
+        android:layout_width="84dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/textView2"
+        android:layout_alignLeft="@id/textView2"
+        android:layout_marginLeft="178dp"
+        android:layout_marginTop="18dp"
+        android:gravity="clip_horizontal|center|clip_vertical"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/select"
+        android:layout_width="84dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/pernum"
+        android:layout_alignLeft="@id/pernum"
+        android:layout_alignParentLeft="false"
+        android:background="@drawable/refesh"
+        android:text="查询天数"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+</RelativeLayout>
