@@ -59,10 +59,10 @@ public class Plan extends SQLiteOpenHelper {
             ex.printStackTrace();
         }
     }
-    public void updatePlan(int perday){
+    public void updatePlan(String ID,int perday){
         ContentValues values = new ContentValues();
         values.put(this.PERDAY ,perday);
-        String[] args={String.valueOf("GRE")};
+        String[] args={String.valueOf(ID)};
         db.update(PlanTable,values,"ID=?",args);
     }
     public int selectInsertOrNot(String ID){
@@ -97,12 +97,6 @@ public class Plan extends SQLiteOpenHelper {
     }
 
 
-    public int getTableCount(String tableName){
-        String sql = "SELECT ID FROM " + tableName;
-        Cursor cursor = db.rawQuery(sql,null);
-        cursor.close();
-        return cursor.getCount();
-    }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
