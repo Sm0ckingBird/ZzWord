@@ -12,11 +12,24 @@
         <TextView
             android:id="@+id/SPELLING"
             android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_toLeftOf="@+id/collect_button"
+            android:layout_centerVertical="true"
+            android:gravity="center"
             android:layout_margin="5dp"
             android:textSize="20sp"
             android:textColor="#000000">
         </TextView>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/collect_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|end"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/fab_margin"
+            android:elevation="15dp"
+            app:fabSize="mini"
+            android:src="@drawable/ic_bookmark_border_white_48dp" />
     </RelativeLayout>
 </android.support.v7.widget.CardView>

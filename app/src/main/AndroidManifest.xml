@@ -20,7 +20,8 @@
         <activity android:name=".AttentionWord" />
         <activity android:name=".GREWord" />
         <activity android:name=".ChangePlan" />
-        <activity android:name=".WordListActivity" />
+        <activity android:name=".WordListActivity"
+            android:label="生词本"/>
         <activity
             android:name=".RememberWord"
             android:label=""

@@ -142,6 +142,76 @@ public class DBManager extends SQLiteOpenHelper {
         return GREWords;
     }
 
+    public List<Word> findUndoGREWords(){
+        ArrayList<Word> GREWords = new ArrayList<Word>();
+        //Cursor cursor = db.query("book1", null, null, null, null, null, null);
+        //按字母顺序返回GRE三本书中的所有词汇
+        String sql = "SELECT * FROM (SELECT * FROM book1 UNION SELECT * FROM book2 UNION SELECT * FROM book3) " +
+                " where FAMILIARITY = \"0\" " + "limit 100";
+        Cursor cursor = db.rawQuery(sql, null);
+        while(cursor.moveToNext()){
+            Word word = new Word();
+            word.setID(cursor.getInt(cursor.getColumnIndex("ID")));
+            word.setMEANNING(cursor.getString(cursor.getColumnIndex("MEANNING")));
+            word.setSPELLING(cursor.getString(cursor.getColumnIndex("SPELLING")));
+            word.setPHONETIC_ALPHABET(cursor.getString(cursor.getColumnIndex("PHONETIC_ALPHABET")));
+            word.setLIST(cursor.getString(cursor.getColumnIndex("LIST")));
+            word.setCOLLECTED(Boolean.parseBoolean(cursor.getString(cursor.getColumnIndex("COLLECTED"))));
+            word.setFAMILIARITY(cursor.getString(cursor.getColumnIndex("FAMILIARITY")));
+            word.setSENTENCE(cursor.getString(cursor.getColumnIndex("SENTENCE")));
+            GREWords.add(word);
+        }
+        cursor.close();
+        return GREWords;
+    }
+
+    public List<Word> findDoneGREWords(){
+        ArrayList<Word> GREWords = new ArrayList<Word>();
+        //Cursor cursor = db.query("book1", null, null, null, null, null, null);
+        //按字母顺序返回GRE三本书中的所有词汇
+        String sql = "SELECT * FROM (SELECT * FROM book1 UNION SELECT * FROM book2 UNION SELECT * FROM book3) " +
+                " where FAMILIARITY != '0' " + "limit 100";
+        Cursor cursor = db.rawQuery(sql, null);
+        while(cursor.moveToNext()){
+            Word word = new Word();
+            word.setID(cursor.getInt(cursor.getColumnIndex("ID")));
+            word.setMEANNING(cursor.getString(cursor.getColumnIndex("MEANNING")));
+            word.setSPELLING(cursor.getString(cursor.getColumnIndex("SPELLING")));
+            word.setPHONETIC_ALPHABET(cursor.getString(cursor.getColumnIndex("PHONETIC_ALPHABET")));
+            word.setLIST(cursor.getString(cursor.getColumnIndex("LIST")));
+            word.setCOLLECTED(Boolean.parseBoolean(cursor.getString(cursor.getColumnIndex("COLLECTED"))));
+            word.setFAMILIARITY(cursor.getString(cursor.getColumnIndex("FAMILIARITY")));
+            word.setSENTENCE(cursor.getString(cursor.getColumnIndex("SENTENCE")));
+            GREWords.add(word);
+        }
+        cursor.close();
+        return GREWords;
+    }
+
+    public List<Word> findCollectedGREWords(){
+        ArrayList<Word> GREWords = new ArrayList<Word>();
+        //Cursor cursor = db.query("book1", null, null, null, null, null, null);
+        //按字母顺序返回GRE三本书中的所有词汇
+        String sql = "SELECT * FROM (SELECT * FROM book1 UNION SELECT * FROM book2 UNION SELECT * FROM book3) " +
+                " where COLLECTED = 'true' " + "limit 100";
+        Cursor cursor = db.rawQuery(sql, null);
+        while(cursor.moveToNext()){
+            Word word = new Word();
+            word.setID(cursor.getInt(cursor.getColumnIndex("ID")));
+            word.setMEANNING(cursor.getString(cursor.getColumnIndex("MEANNING")));
+            word.setSPELLING(cursor.getString(cursor.getColumnIndex("SPELLING")));
+            word.setPHONETIC_ALPHABET(cursor.getString(cursor.getColumnIndex("PHONETIC_ALPHABET")));
+            word.setLIST(cursor.getString(cursor.getColumnIndex("LIST")));
+            word.setCOLLECTED(Boolean.parseBoolean(cursor.getString(cursor.getColumnIndex("COLLECTED"))));
+            word.setFAMILIARITY(cursor.getString(cursor.getColumnIndex("FAMILIARITY")));
+            word.setSENTENCE(cursor.getString(cursor.getColumnIndex("SENTENCE")));
+            GREWords.add(word);
+        }
+        cursor.close();
+        return GREWords;
+    }
+
+
     /**
      * @param index 计划进度
      * @param num   今日背单词数量

@@ -18,7 +18,7 @@
             android:layout_centerVertical="true"
             android:layout_margin="10dp"
             android:layout_toLeftOf="@id/done_button"
-            android:background="@color/orange"
+            android:background="@color/colorPrimary"
             android:text="未学习"
             android:textColor="@color/white" />
 
@@ -28,7 +28,7 @@
             android:layout_height="50dp"
             android:layout_centerInParent="true"
             android:layout_margin="10dp"
-            android:background="@color/orange"
+            android:background="@color/colorPrimary"
             android:text="已学习"
             android:textColor="@color/white" />
 
@@ -39,7 +39,7 @@
             android:layout_centerVertical="true"
             android:layout_margin="10dp"
             android:layout_toRightOf="@id/done_button"
-            android:background="@color/orange"
+            android:background="@color/colorPrimary"
             android:text="我的收藏"
             android:textColor="@color/white" />
     </RelativeLayout>
