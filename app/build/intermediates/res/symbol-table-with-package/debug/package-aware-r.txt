@@ -1047,14 +1047,14 @@ drawable startstudy
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 id ALT
-id CETWords
+id CET
 id CTRL
 id EditWord_meanning
 id EditWord_spelling
 id Edittext_GRE_search
 id Edittext_attword_search
 id FUNCTION
-id GREWords
+id GRE
 id GRE_buttons_line
 id GRE_word_title
 id META
@@ -1125,6 +1125,7 @@ id chronometer
 id clip_horizontal
 id clip_vertical
 id collapseActionView
+id collect_button
 id collected_button
 id collection
 id container
@@ -1232,8 +1233,6 @@ id remember_word_title
 id remember_word_unknow
 id remember_word_unsure
 id renewplan
-id restword
-id restwordtext
 id right
 id right_icon
 id right_side
@@ -1269,6 +1268,7 @@ id select
 id select_dialog_listview
 id selected
 id shortcut
+id show
 id showCustom
 id showHome
 id showTitle

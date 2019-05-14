@@ -7,13 +7,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
-import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.zzwordapp.DB.DBManager;
+import com.example.zzwordapp.DB.Plan;
 import com.example.zzwordapp.bean.GREWord.Word;
 import com.example.zzwordapp.bean.Plan.TodayPlan;
 
@@ -33,12 +33,12 @@ public class RememberWord extends AppCompatActivity {
     private Button remember_word_know;
     private Button remember_word_unsure;
     private DBManager dm;
+    private Plan planDB;
     private boolean isReviewing = true;
 
 
 
     private Word thisWord;
-    private static int index = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +46,7 @@ public class RememberWord extends AppCompatActivity {
         setContentView(R.layout.activity_remember_word);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
 
         remember_word_title = (TextView)findViewById(R.id.remember_word_title);
         remember_word_pronunciation = (TextView)findViewById(R.id.remember_word_pronunciation);
@@ -63,8 +64,9 @@ public class RememberWord extends AppCompatActivity {
 
         List<Word> old_list = new ArrayList<Word>();
 
+        planDB = Plan.getInstance(this);
 
-        TodayPlan.init(2,50, old_list);
+        TodayPlan.init(planDB.getIndex("GRE"),planDB.selectPERorNUM("GRE","PERDAY"), old_list);
         TodayPlan.addNewWords(dm.findPartGREWords(TodayPlan.getIndex(),TodayPlan.getNew_number()));
         if(TodayPlan.getOld_words().isEmpty()){
             thisWord = TodayPlan.getNew_words().get(0);
@@ -125,6 +127,7 @@ public class RememberWord extends AppCompatActivity {
                                 Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(RememberWord.this, MainActivity.class);
                         RememberWord.this.startActivity(intent);
+                        planDB.updateIndex("GRE",planDB.getIndex("GRE")+planDB.selectPERorNUM("GRE","PERDAY"));
                     }
                     //否则还是处于新学单词阶段
                     else
@@ -146,8 +149,13 @@ public class RememberWord extends AppCompatActivity {
                                     Toast.LENGTH_SHORT).show();
                             thisWord = TodayPlan.getNew_words().get(TodayPlan.getProcess());
                         }
-                        else
-                            Log.d("Finished!", "onClick: Finished!!!!!");
+                        else {
+                            Toast.makeText(getApplicationContext(), "完成今日计划！",
+                                    Toast.LENGTH_SHORT).show();
+                            Intent intent = new Intent(RememberWord.this, MainActivity.class);
+                            RememberWord.this.startActivity(intent);
+                            planDB.updateIndex("GRE",planDB.getIndex("GRE")+planDB.selectPERorNUM("GRE","PERDAY"));
+                        }
                     }
                     else {
                         thisWord = TodayPlan.getOld_words().get(reviewProcess + 1);
@@ -179,6 +187,7 @@ public class RememberWord extends AppCompatActivity {
                                 Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(RememberWord.this, MainActivity.class);
                         RememberWord.this.startActivity(intent);
+                        planDB.updateIndex("GRE",planDB.getIndex("GRE")+planDB.selectPERorNUM("GRE","PERDAY"));
                     }
                     //否则还是处于新学单词阶段
                     else
@@ -198,8 +207,13 @@ public class RememberWord extends AppCompatActivity {
                                     Toast.LENGTH_SHORT).show();
                             thisWord = TodayPlan.getNew_words().get(TodayPlan.getProcess());
                         }
-                        else
-                            Log.d("Finished!", "onClick: Finished!!!!!");
+                        else {
+                            Toast.makeText(getApplicationContext(), "完成今日计划！",
+                                    Toast.LENGTH_SHORT).show();
+                            Intent intent = new Intent(RememberWord.this, MainActivity.class);
+                            RememberWord.this.startActivity(intent);
+                            planDB.updateIndex("GRE",planDB.getIndex("GRE")+planDB.selectPERorNUM("GRE","PERDAY"));
+                        }
                     }
                     else {
                         thisWord = TodayPlan.getOld_words().get(reviewProcess + 1);
@@ -234,6 +248,7 @@ public class RememberWord extends AppCompatActivity {
                                 Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(RememberWord.this, MainActivity.class);
                         RememberWord.this.startActivity(intent);
+                        planDB.updateIndex("GRE",planDB.getIndex("GRE")+planDB.selectPERorNUM("GRE","PERDAY"));
                     }
                     //否则还是处于新学单词阶段
                     else
@@ -253,8 +268,13 @@ public class RememberWord extends AppCompatActivity {
                                     Toast.LENGTH_SHORT).show();
                             thisWord = TodayPlan.getNew_words().get(TodayPlan.getProcess());
                         }
-                        else
-                            Log.d("Finished!", "onClick: Finished!!!!!");
+                        else {
+                            Toast.makeText(getApplicationContext(), "完成今日计划！",
+                                    Toast.LENGTH_SHORT).show();
+                            Intent intent = new Intent(RememberWord.this, MainActivity.class);
+                            RememberWord.this.startActivity(intent);
+                            planDB.updateIndex("GRE",planDB.getIndex("GRE")+planDB.selectPERorNUM("GRE","PERDAY"));
+                        }
                     }
                     else {
                         thisWord = TodayPlan.getOld_words().get(reviewProcess + 1);
@@ -268,56 +288,16 @@ public class RememberWord extends AppCompatActivity {
 
 
 
-        cardView.setOnTouchListener(new View.OnTouchListener(){
-            double mPosX;
-            double mPosY;
-            double mCurPosX;
-            double mCurPosY;
+        cardView.setOnClickListener(new View.OnClickListener(){
             @Override
-            public boolean onTouch(View v, MotionEvent event) {
+            public void onClick(View v) {
+                if(remember_word_meaning.getVisibility()==View.INVISIBLE)
+                    remember_word_meaning.setVisibility(View.VISIBLE);
+                else
+                    remember_word_meaning.setVisibility(View.INVISIBLE);
 
-                switch(event.getAction()){
-                    case MotionEvent.ACTION_DOWN:
-                         mPosX = event.getX();
-                         mPosY = event.getY();
-                        break;
-                    case MotionEvent.ACTION_MOVE:
-                         mCurPosX = event.getX();
-                         mCurPosY = event.getY();
-                        break;
-                    case MotionEvent.ACTION_UP:
-                        if ((mCurPosX - mPosX > 0) && (Math.abs(mCurPosX - mPosX) > 150)) {
-                            Log.d("direction","右");
-                            index ++;
-                            thisWord.setPHONETIC_ALPHABET("next");
-                            thisWord.setSPELLING("spellingh"+index);
-                            thisWord.setMEANNING("nextmeaning");
-                            thisWord.setCOLLECTED(false);
-
-                            remember_word_title.setText(thisWord.getSPELLING());
-                            remember_word_meaning.setText(thisWord.getMEANNING());
-                            remember_word_pronunciation.setText(thisWord.getPHONETIC_ALPHABET());
-                            if(!thisWord.getCOLLECTED())
-                                fab.setImageResource(R.drawable.ic_bookmark_border_white_48dp);
-                            else
-                                fab.setImageResource(R.drawable.ic_bookmark);
-
-                        } else if (mCurPosX - mPosX < 0 && (Math.abs(mCurPosX - mPosX) > 150)) {
-                            Log.d("direction","左");
-                        }else if((mCurPosY - mPosY) > 0 && (Math.abs(mCurPosY - mPosY)) > 150){
-                            Log.d("direction","下");
-                        }else{
-                        if(remember_word_meaning.getVisibility()==View.INVISIBLE)
-                            remember_word_meaning.setVisibility(View.VISIBLE);
-                        else
-                            remember_word_meaning.setVisibility(View.INVISIBLE);
-                        }
-                        break;
-                }
-                return true;
             }
         });
-
     }
 
     private void refresh(){

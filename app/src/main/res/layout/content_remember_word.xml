@@ -54,9 +54,8 @@
                     android:layout_height="215dp"
                     android:layout_margin="20dp"
                     android:gravity="center_horizontal"
-                    android:text="aaaaaaaaaaaaaaaaaaaaaa
-                    aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                    aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                    android:text=""
+                    android:visibility="invisible"
                     android:textSize="20dp" />
 
                 <TextView

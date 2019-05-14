@@ -16,8 +16,6 @@ import com.example.zzwordapp.DB.Plan;
 public class MainActivity extends Activity implements View.OnClickListener {
     private Plan PlanDB;
     private DBManager dbManager;
-    private Button CETWordsButton;		//CET词汇按钮
-    private Button GREWordsButton;		//GRE词汇按钮
     private Button TranslateButton;		//翻译
     private Button AttentionButton;		//生词本
 
@@ -26,7 +24,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
     private Button CollectionButton;
     private TextView PerdayWord;
-    private TextView TotalWord;
+    private Button TotalWord;
     private  long exitTime = 0;
     View myView;
     @Override
@@ -38,8 +36,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         LayoutInflater mInflater = LayoutInflater.from(this);
         myView = mInflater.inflate(R.layout.main, null);
         if(PlanDB.selectInsertOrNot("GRE")==0){
-            PlanDB.insertWord("GRE",50,PlanDB.getTableCount("book1")+PlanDB.getTableCount("book2")
-            +PlanDB.getTableCount("book3"));
+            PlanDB.insertWord("GRE",50,5940,0);
         }
 
 
@@ -83,10 +80,6 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
     private void initWidgets() {
         // TODO Auto-generated method stub
-        this.CETWordsButton=(Button) myView.findViewById(R.id.CETWords);
-        CETWordsButton.setOnClickListener(this);
-        this.GREWordsButton=(Button) myView.findViewById(R.id.GREWords);
-        GREWordsButton.setOnClickListener(this);
         this.TranslateButton=(Button) myView.findViewById(R.id.translate);
         TranslateButton.setOnClickListener(this);
         this.AttentionButton=(Button) myView.findViewById(R.id.attention);
@@ -95,7 +88,12 @@ public class MainActivity extends Activity implements View.OnClickListener {
         ChangePlan.setOnClickListener(this);
         this.CollectionButton=(Button) myView.findViewById(R.id.collection);
         CollectionButton.setOnClickListener(this);
+        this.StratStudy = (Button)myView.findViewById(R.id.startstudy);
+        StratStudy.setOnClickListener(this);
+        this.TotalWord = (Button) myView.findViewById(R.id.totalword);
+        TotalWord.setText("已学完"+PlanDB.getIndex("GRE")+"/"+"5940");
         this.PerdayWord=(TextView) myView.findViewById(R.id.todaywordtext);
+
         String type="PERDAY";
         int perday=PlanDB.selectPERorNUM("GRE",type);
         PerdayWord.setText(String.format("%1$d",perday));
@@ -110,15 +108,10 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
     public void onClick(View v) {
         // TODO Auto-generated method stub
-        if (v==CETWordsButton){
+        if (v==StratStudy){
             Intent intent = new Intent();
             intent.setClass(MainActivity.this, RememberWord.class);
             MainActivity.this.startActivity(intent);
-        }
-
-        if (v==GREWordsButton){
-            Intent intent = new Intent(MainActivity.this, GREWord.class);
-            startActivity(intent);
         }
 
         if (v==TranslateButton){

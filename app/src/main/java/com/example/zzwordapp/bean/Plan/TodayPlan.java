@@ -9,7 +9,7 @@ public class TodayPlan {
     private static int process = 0;    //背单词进度
     private static int reviewProcess = 0; //复习进度
     private static int reviewPartLength = 0;
-    private static int index = 2;      //目前背到了第几个单词
+    private static int index = 0;      //目前背到了第几个单词
     private static int new_number = 50; //新学单词数
     private static int old_number; //复习单词数
     private static List<Word> new_words = new ArrayList<Word>();      //新学单词表

@@ -46,11 +46,11 @@ public class Plan extends SQLiteOpenHelper {
                 + NUMBER + " INT "+")");
     }
 
-    public void insertWord(String id,int perday,int number){
+    public void insertWord(String id,int perday,int number, int index){
         ContentValues values = new ContentValues();
         values.put(this.ID,id);
         values.put(this.PERDAY ,perday);
-       /* values.put(this.INDEXPlan ,0);*/
+        values.put(this.INDEXPlan ,index);
         values.put(this.NUMBER ,number);
         try{
             db.insert(this.PlanTable, null, values);
@@ -65,6 +65,14 @@ public class Plan extends SQLiteOpenHelper {
         String[] args={String.valueOf(ID)};
         db.update(PlanTable,values,"ID=?",args);
     }
+
+    public void updateIndex(String ID,int index){
+        ContentValues values = new ContentValues();
+        values.put(this.INDEXPlan ,index);
+        String[] args={String.valueOf(ID)};
+        db.update(PlanTable,values,"ID=?",args);
+    }
+
     public int selectInsertOrNot(String ID){
         String sql = "SELECT * FROM " + PlanTable + " WHERE "+this.ID + " = " + "\'" + ID + "\'";
         Cursor cursor = db.rawQuery(sql,null);
@@ -94,6 +102,17 @@ public class Plan extends SQLiteOpenHelper {
     }
     public void closeDB(){
         if(this.db!=null)this.db.close();
+    }
+
+
+    public int getIndex(String ID){
+        String sql = "SELECT * FROM " + this.PlanTable + " WHERE "+this.ID + " = " + "\'" + ID + "\'";
+        Cursor cursor = db.rawQuery(sql,null);
+        int result = 0;
+        if (cursor.moveToFirst()){
+            result=cursor.getInt(cursor.getColumnIndex(INDEXPlan));
+        }
+        return result;
     }
 
 

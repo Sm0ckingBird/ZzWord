@@ -73,7 +73,7 @@ public class ChangePlan extends AppCompatActivity {
                 int pernum=Integer.parseInt(PerNum.getText().toString());
                 int daynum=Integer.parseInt(DayNum.getText().toString());
                 if(PlanDB.selectInsertOrNot(ID)==0){
-                    PlanDB.insertWord(ID,pernum,6000);
+                    PlanDB.insertWord(ID,pernum,5940, 0);
                 }else{
                     PlanDB.updatePlan(ID,pernum);
                 }
@@ -96,7 +96,7 @@ public class ChangePlan extends AppCompatActivity {
             if(view == CETButton){
                 CETButton.setBackgroundResource(R.drawable.refesh);
                 GREButton.setBackgroundResource(R.drawable.queding);
-                ID="CET";
+                ID="GRE";
                 ShowButton.setText("CET");
             }
             if(view == GREButton){
